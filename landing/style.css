@@ -118,11 +118,15 @@ form button:hover{
   transform:scale(1.02);
 }
 
-footer{
-  margin:60px 0 30px;
-  font-size:13px;
-  color:var(--muted);
-  text-align:center;
+footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 13px;
+  color: #aaa;
+}
+
+footer p {
+  margin: 6px 0;
 }
 
 @media(min-width:768px){
