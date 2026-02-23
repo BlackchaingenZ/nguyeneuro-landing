@@ -188,3 +188,60 @@ footer p {
   margin-bottom:15px;
   color:#111; /* đen đậm */
 }
+
+/* ===============================
+   RESULTS – SAFARI FIXED VERSION
+================================== */
+
+.results-section {
+  text-align: center;
+}
+
+.results-title {
+  margin-bottom: 10px;
+}
+
+.results-sub {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  /* Thêm dòng này để ngăn các item bị kéo dãn không kiểm soát */
+  align-items: start; 
+}
+
+/* Card ảnh */
+.result-item {
+  width: 100%;
+  /* Khắc phục lỗi Safari: Ép tỷ lệ khung hình (ví dụ 3/4 hoặc 9/16 cho ảnh điện thoại) */
+  aspect-ratio: 3 / 4; 
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0f172a;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  /* Đảm bảo item luôn chiếm đúng chiều rộng grid */
+  min-width: 0; 
+  display: flex;
+}
+
+/* Ảnh giữ form giống Chrome */
+.result-item img {
+  width: 100%;
+  height: 100%;
+  /* Quan trọng: Giúp ảnh không bị méo và lấp đầy khung hình */
+  object-fit: cover;
+  /* Căn lề ảnh lên trên cùng để thấy phần header của feedback */
+  object-position: top; 
+  display: block;
+}
+
+/* Desktop */
+@media(min-width:768px){
+  .results-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
