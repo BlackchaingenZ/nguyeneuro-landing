@@ -12,3 +12,18 @@ function reveal() {
 
 window.addEventListener('scroll', reveal);
 window.addEventListener('load', reveal);
+
+function openModal(){
+  document.getElementById("installModal").style.display = "block";
+}
+
+function closeModal(){
+  document.getElementById("installModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+  let modal = document.getElementById("installModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
