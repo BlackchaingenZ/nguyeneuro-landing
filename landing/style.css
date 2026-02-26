@@ -287,3 +287,38 @@ footer p {
   from{opacity:0; transform:translateY(20px);}
   to{opacity:1; transform:translateY(0);}
 }
+/* DOWNLOAD BUTTONS */
+.download-buttons{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  margin:20px 0;
+  flex-wrap:wrap;
+}
+
+.store-btn{
+  padding:14px 22px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  transition:0.3s ease;
+  border:1px solid rgba(255,255,255,0.2);
+}
+
+.appstore{
+  background:linear-gradient(135deg,#7c5cff,#5a3ef0);
+  color:#fff;
+}
+
+.playstore{
+  background:linear-gradient(135deg,#6b4dfc,#4c2dd8);
+  color:#fff;
+}
+
+.store-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
