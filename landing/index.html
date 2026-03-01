@@ -11,7 +11,7 @@
   <meta http-equiv="Expires" content="0" />
 
   <!-- VERSION CSS -->
-  <link rel="stylesheet" href="style.css?v=3.2" />
+  <link rel="stylesheet" href="style.css?v=3.6" />
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -35,8 +35,44 @@
     <h1>Đừng giao dịch vàng bằng cảm xúc.</h1>
     <p>Hãy bắt đầu với một hệ thống rõ ràng – có quản lý rủi ro – có quy trình từng bước.</p>
     <p><strong>Hệ thống tín hiệu tự động 24/7 – Thiết kế cho người mới</strong></p>
-    <a href="#steps" class="btn">KÍCH HOẠT HỆ THỐNG NGAY</a>
   </section>
+
+  <!-- CÁCH HỆ THỐNG HOẠT ĐỘNG -->
+<section class="card fade">
+  <h2 style="text-align:center;">Cách hệ thống hoạt động</h2>
+
+  <div class="system-grid">
+
+    <!-- BƯỚC 1 -->
+    <div class="system-item">
+      <img src="assets/images/system/step1.jpg" alt="Điểm BUY SELL">
+      <h4>1. Xuất hiện tín hiệu</h4>
+      <p>Khi thị trường đáp ứng đủ điều kiện, biểu đồ sẽ hiển thị các điểm <strong>BUY / SELL</strong> rõ ràng.</p>
+    </div>
+
+    <!-- BƯỚC 2 -->
+    <div class="system-item">
+      <img src="assets/images/system/step2.jpg" alt="Tự động sinh lệnh">
+      <h4>2. Tự động thực thi</h4>
+      <p>Sau khi xác nhận, hệ thống tự động sinh lệnh theo cấu trúc đã lập trình và gửi tới người dùng.</p>
+
+<button class="btn explain-btn" onclick="openExplainModal()">
+  Giải thích lệnh
+</button>
+    </div>
+
+    <!-- BƯỚC 3 -->
+    <div class="system-item">
+      <img src="assets/images/system/step3.jpg" alt="Kết quả giao dịch">
+      <img src="assets/images/system/step4.jpg" alt="Kết quả giao dịch">
+      <h4>3. Ghi nhận kết quả</h4>
+      <p>Kết quả được ghi nhận minh bạch trên tài khoản với lịch sử giao dịch đầy đủ.</p>
+    </div>
+  </div>
+      <p>Điểm nổi bật của hệ thống là toàn bộ tín hiệu vào lệnh được tự động tạo và gửi đến người dùng 24/7 theo đúng bộ quy tắc đã lập trình.</p>
+      <p>Việc của người giao dịch là thực hiện nhập lệnh theo tín hiệu được cung cấp, tuân thủ đúng cấu trúc quản lý vốn và kiên nhẫn chờ kết quả.</p>
+      <a href="#steps" class="btn">KÍCH HOẠT HỆ THỐNG NGAY</a>
+</section>
 
   <!-- SOCIAL PROOF -->
   <section class="card fade">
@@ -254,6 +290,46 @@
   </div>
 </div>
 
-<script src="script.js?v=3.2"></script>
+<!-- POPUP GIẢI THÍCH LỆNH -->
+<div id="explainModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeExplainModal()">×</span>
+
+    <h3>📊 Cách đặt lệnh theo tín hiệu</h3>
+
+    <h4>🔴 Loại lệnh: BÁN LIMIT XAUUSD</h4>
+    <p>
+      Đây là lệnh chờ bán. Khi giá vàng tăng lên mức đã đặt sẵn,
+      lệnh sẽ tự động được khớp.
+    </p>
+
+    <div class="order-box">
+      <p><strong>Lệnh 1:</strong> 0.01 lot tại 5167<br>
+      Chốt lãi: 5163 – Cắt lỗ: 5185</p>
+
+      <p><strong>Lệnh 2:</strong> 0.02 lot tại 5171<br>
+      Chốt lãi: 5167 – Cắt lỗ: 5185</p>
+
+      <p><strong>Lệnh 3:</strong> 0.04 lot tại 5175<br>
+      Chốt lãi: 5171 – Cắt lỗ: 5185</p>
+    </div>
+
+    <div class="note-box">
+      <p><strong>⚡ Hiểu đơn giản:</strong></p>
+      <p>
+        Đặt 3 lệnh bán chờ tại 5167 – 5171 – 5175,
+        khối lượng tăng dần 0.01 → 0.02 → 0.04 lot.
+        Tất cả cùng mức cắt lỗ 5185.
+      </p>
+      <p>
+        Khi giá tăng vào vùng này và quay đầu giảm,
+        và cán chốt lời theo cấu trúc đã thiết lập.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js?v=3.6"></script>
 </body>
 </html>

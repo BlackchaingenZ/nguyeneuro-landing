@@ -27,3 +27,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function openExplainModal(){
+  document.getElementById("explainModal").style.display = "flex";
+}
+
+function closeExplainModal(){
+  document.getElementById("explainModal").style.display = "none";
+}

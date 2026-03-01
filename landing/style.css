@@ -316,3 +316,122 @@ footer p {
   box-shadow:0 0 18px rgba(34,197,94,0.35); /* glow xanh nhẹ */
   border-color:#22c55e;
 }
+
+/* SYSTEM GRID */
+
+.system-grid{
+  display:grid;
+  gap:25px;
+  margin-top:25px;
+}
+
+.system-item{
+  background:#0f172a;
+  border-radius:16px;
+  padding:20px;
+  text-align:left;
+  transition:0.3s ease;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.system-item:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+.system-item img{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:15px;
+}
+
+.system-item h4{
+  margin-bottom:10px;
+  font-size:18px;
+}
+
+.system-item p{
+  font-size:14px;
+  color:#94a3b8;
+  line-height:1.6;
+}
+
+/* Desktop */
+@media(min-width:768px){
+  .system-grid{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* ===== MODAL FIX FULL ===== */
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+  backdrop-filter:blur(6px);
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  z-index:9999;
+}
+
+.modal-content{
+  background:#0f172a;
+  width:100%;
+  max-width:520px;          /* kiểm soát chiều ngang */
+  max-height:90vh;          /* tránh tràn màn hình */
+  overflow-y:auto;          /* nếu dài sẽ scroll */
+  border-radius:18px;
+  padding:30px;
+  box-sizing:border-box;
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+  position:relative;
+}
+
+/* Mobile tối ưu */
+@media(max-width:480px){
+  .modal-content{
+    padding:22px;
+    border-radius:16px;
+  }
+}
+
+.close-btn{
+  position:absolute;
+  top:15px;
+  right:18px;
+  font-size:22px;
+  cursor:pointer;
+  color:#94a3b8;
+}
+
+.modal-content h3{
+  margin-bottom:18px;
+  font-size:20px;
+}
+
+.modal-content p{
+  line-height:1.6;
+  margin-bottom:12px;
+  word-break:break-word;   /* chống tràn chữ */
+}
+
+/* Box lệnh */
+.order-box{
+  background:#111a2e;
+  padding:18px;
+  border-radius:14px;
+  margin:18px 0;
+  border:1px solid rgba(255,255,255,0.06);
+}
+
+/* Box giải thích */
+.note-box{
+  background:rgba(34,197,94,0.08);
+  border:1px solid rgba(34,197,94,0.3);
+  padding:18px;
+  border-radius:14px;
+  margin-top:15px;
+}
