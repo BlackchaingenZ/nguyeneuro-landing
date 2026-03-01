@@ -11,7 +11,7 @@
   <meta http-equiv="Expires" content="0" />
 
   <!-- VERSION CSS -->
-  <link rel="stylesheet" href="style.css?v=3.6" />
+  <link rel="stylesheet" href="style.css?v=3.8" />
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -135,10 +135,14 @@
 
     <!-- BƯỚC 1 -->
     <div class="step-box">
-      <h3>Bước 1: Mở tài khoản giao dịch</h3>
+      <h3>Bước 1: Mở tài khoản giao dịch trên VT Markets</h3>
+<button class="btn" onclick="openBrokerModal()">
+  Thông tin về sàn giao dịch VT Markets
+</button>
       <p>Đăng ký đúng theo hướng dẫn.</p>
       <p><strong>Mã giới thiệu: 668899</strong></p>
       <p>Chọn: MT5 – VIP STP – USD</p>
+
       <a href="https://vtm.pro/NFrQVb" class="btn" target="_blank">MỞ TÀI KHOẢN NGAY</a>
 
       <div class="video-box">
@@ -330,6 +334,45 @@
   </div>
 </div>
 
-<script src="script.js?v=3.6"></script>
+<!-- POPUP THÔNG TIN SÀN -->
+<div id="brokerModal" class="modal">
+  <div class="modal-content">
+
+    <span class="close-btn" onclick="closeBrokerModal()">×</span>
+
+    <h3>Thông tin về sàn VT Markets</h3>
+
+    <div class="broker-section">
+      <h4>1️⃣ Thông tin trên WikiFX</h4>
+      <p>
+        WikiFX là nền tảng tra cứu sàn giao dịch toàn cầu, cung cấp thông tin
+        về giấy phép, pháp lý và mức độ uy tín.
+      </p>
+      <img src="assets/images/broker/Wikifx1.jpg" alt="VT Markets WikiFX">
+      <img src="assets/images/broker/Wikifx2.jpg" alt="VT Markets WikiFX">
+    </div>
+
+    <div class="broker-section">
+      <h4>2️⃣ Thông tin trên Google</h4>
+      <p>
+        Có thể tra cứu VT Markets trên Google để xem đánh giá,
+        phản hồi người dùng và thông tin doanh nghiệp.
+      </p>
+      <img src="assets/images/broker/google.jpg" alt="VT Markets Google">
+    </div>
+
+    <div class="broker-section">
+      <h4>3️⃣ Thông tin tham khảo từ ChatGPT</h4>
+      <p>
+        Tham khảo thông tin tổng quan về sàn, giấy phép và lịch sử hoạt động
+        thông qua các nguồn phân tích tổng hợp.
+      </p>
+      <img src="assets/images/broker/chatgpt.jpg" alt="VT Markets ChatGPT">
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js?v=3.8"></script>
 </body>
 </html>

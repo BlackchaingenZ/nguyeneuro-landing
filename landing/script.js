@@ -35,3 +35,11 @@ function openExplainModal(){
 function closeExplainModal(){
   document.getElementById("explainModal").style.display = "none";
 }
+
+function openBrokerModal(){
+  document.getElementById("brokerModal").style.display = "flex";
+}
+
+function closeBrokerModal(){
+  document.getElementById("brokerModal").style.display = "none";
+}
